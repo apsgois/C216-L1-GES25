@@ -20,7 +20,7 @@ server.post('/api/v1/professor/inserir', (req, res, next) => {
     const { nome, disciplina, email } = req.body;
 
     // Simulação de inserção no banco de dados
-    const novoAluno = {
+    const novoProfessor = {
         id: professores.length + 1, // Simulação de um ID único
         nome,
         disciplina,
