@@ -1,16 +1,17 @@
 {
-  "name": "c216-l1-ges25",
+  "name": "pratica-4",
   "version": "1.0.0",
-  "description": "Prática da metéria de sistemas distribuidos",
+  "description": "Crud com restify.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js"
+
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/apsgois/C216-L1-GES25.git"
   },
-  "author": "",
+  "author": "Ana Paula Gois, 25",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/apsgois/C216-L1-GES25/issues"
