@@ -113,7 +113,7 @@ server.post('/api/v1/professor/excluir', async(req, res, next) => {
 server.del('/api/v1/database/reset', async (req, res, next) => {
     try {
       await pool.query('DROP TABLE IF EXISTS professor');
-      await pool.query('CREATE TABLE alunos (id SERIAL PRIMARY KEY, nome VARCHAR(255) NOT NULL, disciplina VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL)');
+      await pool.query('CREATE TABLE professor (id SERIAL PRIMARY KEY, nome VARCHAR(255) NOT NULL, disciplina VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL)');
       res.send(200, { message: 'Banco de dados resetado com sucesso' });
       console.log('Banco de dados resetado com sucesso');
     } catch (error) {
